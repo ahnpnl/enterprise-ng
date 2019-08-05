@@ -219,6 +219,8 @@ import { WizardDemoTargetFolderPageComponent } from './wizard/wizard-target-fold
 import { WizardDemoValidationRulesPageComponent } from './wizard/wizard-validation-rules-page.demo';
 import { LocaleInitializerModule } from './locale-initializer/locale-initializer.module';
 import { ApplicationMenuRoleSwitcherDemoComponent } from './application-menu/application-menu-roleswitcher.demo';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -415,6 +417,7 @@ import { ApplicationMenuRoleSwitcherDemoComponent } from './application-menu/app
   ],
   imports: [
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserModule,
     CommonModule,
     FormsModule,
@@ -422,6 +425,7 @@ import { ApplicationMenuRoleSwitcherDemoComponent } from './application-menu/app
     ModalDialogDemoModule,
     ContextualActionPanelDemoModule,
     ReactiveFormsModule,
+    ScrollingModule,
     SohoComponentsModule,
     LocaleInitializerModule
   ],

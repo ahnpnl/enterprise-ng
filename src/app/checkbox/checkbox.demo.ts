@@ -27,7 +27,17 @@ export class CheckBoxDemoComponent implements OnInit {
   public id5 = 'checkbox5';
 
   public checkBoxDisabled = false;
-  constructor() { }
+  public items: any[] = [];
+
+  constructor() {
+    for (let i = 0; i < 100; i++) {
+      this.items.push({
+        id: i,
+        checked: false,
+      });
+    }
+  }
+
   ngOnInit() { }
 
   setDisable() {

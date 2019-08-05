@@ -11,6 +11,13 @@ export class MenuButtonDemoComponent implements OnInit, AfterViewInit {
 
   public showLastOption: boolean;
   public toggle: boolean;
+  public items: number[] = [];
+
+  constructor() {
+    for (let i = 0; i < 10; i++) {
+      this.items.push(i);
+    }
+  }
 
   private SUBMENU_RESPONSE_HTML = `
     <li><a href="#" id="SubOptionOne" data-action="AJAX sub-option 1">AJAX sub-option 1</a></li>
